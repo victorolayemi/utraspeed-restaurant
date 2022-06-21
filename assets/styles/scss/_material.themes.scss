@@ -1,0 +1,14 @@
+// Default Theme
+@use '~@angular/material' as mat;
+@include mat.all-component-themes($theme);
+
+// Dark Theme
+.app-dark {
+  @include mat.all-component-themes($dark-theme);
+  .navigation .mat-list-item {
+    color: rgba(255,255,255, 0.87)!important;
+  }
+  mat-sidenav.sidebar-panel .navigation .amml-icon-arrow-container > mat-icon {
+    border-top: 5px solid rgba(255, 255, 255, 0.87);
+  }
+}
